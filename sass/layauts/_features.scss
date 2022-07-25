@@ -1,48 +1,35 @@
 /*двенадцатій паршал*/
 
-.features {
-@extend %section;
+.features__list { 
+display: block;
+
+
+@media screen and (min-width: 768px) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+} 
+
+ @media screen and (min-width: 1200px) {
+
+ }   
 }
 
-.features__list {
-    display: flex;
-    justify-content: center;
-           
-}
-.features__list .item::before
-
-{   display: flex;
-    content: "";
-    height: 120px;
-    margin-right: 30px;
+.features__list .item {
+    text-align: left;
+    width: 450px;
+    margin-bottom: 30px;
+   
+@media screen and (min-width: 768px) {
+    width: calc((100% - 30px)/2);
     
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--button-backgound-color);
-    border-radius: 4px;
-      
-}
-.features__list .item:nth-child(4n) {
-    margin-right: 0;
+} 
+
+@media screen and (min-width: 1200px) {
+   width: 270px;
+} 
 
 }
-
-.icon-antenna::before {
-    background-image: url("../images/icons.svg/antenna\ 1.svg");
-}
-
-.icon-clock::before {
-    background-image: url('../images/icons.svg/clock\ 1.svg');
-}
-
-.icon-diagram::before {
-    background-image: url("../images/icons.svg/diagram\ 1.svg");
-}
-
-.icon-astronaut::before {
-    background-image: url('../images/icons.svg/astronaut\ 1.svg');
-}
-
 .features__title
 {   margin-top: 30px;
     margin-bottom: 10px;
@@ -57,6 +44,61 @@
 .features__text {
     color: var(--main-text-color);
     line-height: 1.7;  
-    width: 270px;
+    width: 450px;
+  @media screen and (min-width: 768px) {
+      width: 354px; 
+      
+  } 
+  
+  @media screen and (min-width: 1200px) {
+     width: 270px;
+  } 
 
 }
+
+
+
+
+// .features {
+// @extend %section;
+// }
+
+// .features__list {
+//     display: flex;
+//     justify-content: center;
+           
+// }
+// .features__list .item::before
+
+// {   display: flex;
+//     content: "";
+//     height: 120px;
+//     margin-right: 30px;
+    
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-color: var(--button-backgound-color);
+//     border-radius: 4px;
+      
+// }
+// .features__list .item:nth-child(4n) {
+//     margin-right: 0;
+
+// }
+
+// .icon-antenna::before {
+//     background-image: url("../images/icons.svg/antenna\ 1.svg");
+// }
+
+// .icon-clock::before {
+//     background-image: url('../images/icons.svg/clock\ 1.svg');
+// }
+
+// .icon-diagram::before {
+//     background-image: url("../images/icons.svg/diagram\ 1.svg");
+// }
+
+// .icon-astronaut::before {
+//     background-image: url('../images/icons.svg/astronaut\ 1.svg');
+// }
+
