@@ -1,0 +1,30 @@
+.mobile-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-left: auto;
+   
+    width: 40px;
+    height: 40px;
+    z-index: 99;
+
+    @media screen and (min-width: 768px) and (min-width: 768px) {
+        display: none;
+    }
+    
+}
+
+.mobile-menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    @media screen and (min-width: 768px) and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.mobile-menu-close {
+    opacity: 0;
+}
