@@ -17,13 +17,53 @@
             <!-- <nav class="header__nav"> -->
                 <a lang="en" href="./index.html" class="logo">Web<span class="studio">Studio</span></a>
             
-            <button class="mobile-menu-btn" type="button" data-menu-button></button>
-            <svg class="mobile-menu-icon" width="40" height="40">
+            <button class="mobile-menu-btn" type="button" data-menu-button>
+            <svg class="mobile-menu-icon" width="24" height="16">
                 <use class="mobile-menu-buger" href="./images/icon-mob.svg#icon-menu-mob"></use>
                 <use class="mobile-menu-close" href="./images/icon-mob.svg#icon-close-mob"></use>
                 
             </svg>
+            </button>
+
+            <!--Moбильное меню-->
             
+           <div class="mobile-menu" data-menu>
+           <ul class="mobile-menu-nav list">
+            <li class="mobile-menu-nav">
+                <a href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-menu-nav">
+                <a href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu-nav">
+                <a href="">Контакты</a>
+            </li>
+           </ul>
+           <ul class="mobile-menu-contacts list">
+            <li class="mobile-menu-contacts">
+                <a href="">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu-contacts">
+                <a href="">info@devstudio.com</a>
+            </li>
+            </ul>
+            <ul class="mobile-menu-socials list">
+            <li class="mobile-menu-socials-item">
+                <a href="">Instagram</a>
+            </li>
+            <li class="mobile-menu-socials-item">
+                <a href="">Twitter</a>
+            </li>
+            <li class="mobile-menu-socials-item">
+                <a href="">Facebook</a>
+            </li>
+            <li class="mobile-menu-socials-item">
+                <a href="">LinkedIn</a>
+            </li>
+
+            </ul>
+        </div>
+   
             
                 <ul class="nav__list">
                     <li class="nav__item"><a href="./index.html" class="nav__link current link">Студия</a></li>
@@ -48,13 +88,13 @@
         </header>
                 
     <main>
-        <!--Герой-->
-        <!-- <section class="hero">
+        
+        <section class="hero">
             <div class="container">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button data-modal-open type="button" class="btn">Заказать услугу</button>
             </div>
-        </section>  -->
+        </section> 
 
            <!--Модальное окно-->
            <div class="backdrop is-hidden" data-modal>
@@ -113,46 +153,8 @@
                        
             </div>
            </div>
-
-           <!--Moбильное меню-->
-           <div class="mobile menu" data-menu></div>
-           <ul class="mobile-menu-nav list">
-            <li class="mobile-menu-nav">
-                <a href="">Студия</a>
-            </li>
-            <li class="mobile-menu-nav">
-                <a href="">Портфолио</a>
-            </li>
-            <li class="mobile-menu-nav">
-                <a href="">Контакты</a>
-            </li>
-           </ul>
-           <ul class="mobile-menu-contacts list">
-            <li class="mobile-menu-contacts">
-                <a href="">+38 096 111 11 11</a>
-            </li>
-            <li class="mobile-menu-contacts">
-                <a href="">info@devstudio.com</a>
-            </li>
-            </ul>
-            <ul class="mobile-menu-socials list">
-            <li class="mobile-menu-socials-item">
-                <a href="">Instagram</a>
-            </li>
-            <li class="mobile-menu-socials-item">
-                <a href="">Twitter</a>
-            </li>
-            <li class="mobile-menu-socials-item">
-                <a href="">Facebook</a>
-            </li>
-            <li class="mobile-menu-socials-item">
-                <a href="">LinkedIn</a>
-            </li>
-
-            </ul>
-
-
-        
+         
+       
         <!--Преимущества-->
         <section class="features">
             <h2 class="visually-hidden">Преимущества</h2>        
@@ -216,7 +218,7 @@
                 <ul class="team__list">
                     
                     <li class="team__item">
-                        <img src="./images/igor.jpg" alt="фото сотрудника" width="270">
+                        <img srcset="./image/" src="./images/igor.jpg" alt="фото сотрудника">
                         <h3 class="team__title">Игорь Демьяненко</h3>
                         <p class="team__position" lang="en">Product Designer</p>
                         <ul class="team__soclinks">
@@ -252,7 +254,7 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img src="./images/olga.jpg" alt="фото сотрудника" width="270">
+                        <img src="./images/olga.jpg" alt="фото сотрудника">
                         <h3 class="team__title">Ольга Репина</h3>
                         <p class="team__position" lang="en">Frontend Developer</p>
                         <ul class="team__soclinks">
@@ -288,7 +290,7 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img src="./images/nikolay.jpg" alt="фото сотрудника" width="270">
+                        <img src="./images/nikolay.jpg" alt="фото сотрудника">
                         <h3 class="team__title">Николай Тарасов</h3>
                         <p class="team__position" lang="en">Marketing</p>
                         <ul class="team__soclinks">
@@ -324,7 +326,7 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img src="./images/mikhail.jpg" alt="фото сотрудника" width="270">
+                        <img src="./images/mikhail.jpg" alt="фото сотрудника">
                         <h3 class="team__title">Михаил Ермаков</h3>
                         <p class="team__position" lang="en">UI Designer</p>
                         <ul class="team__soclinks">
