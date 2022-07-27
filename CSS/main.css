@@ -365,26 +365,28 @@ img {
   overflow: hidden;
 }
 
-.mobile-menu-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: senter;
-      -ms-flex-pack: senter;
-          justify-content: senter;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: auto;
-  width: 40px;
-  height: 40px;
-  padding: 12px 8px;
-  z-index: 1000;
-  border: none;
-  background-color: rgba(0, 0, 0, 0);
-  cursor: pointer;
+@media screen and (max-width: 767px) {
+  .mobile-menu-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: senter;
+        -ms-flex-pack: senter;
+            justify-content: senter;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    padding: 12px 8px;
+    z-index: 1000;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+  }
 }
-@media screen and (min-width: 768px) and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .mobile-menu-btn {
     display: none;
   }
@@ -575,6 +577,10 @@ img {
   }
 }
 
+.item icon-antenna {
+  width: 450px;
+}
+
 /*тринадцатый паршал*/
 .activities {
   padding-top: 0;
@@ -638,6 +644,7 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 30px;
   }
 }
 .section__title {
@@ -704,7 +711,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .client__item {
-    width: calc((100% - 60px) / 2);
+    width: 210px;
     margin: 15px;
   }
 }
@@ -718,6 +725,55 @@ img {
   .client__item .client__item:not(:last-child) {
     margin-right: 30px;
   }
+}
+
+.client__link {
+  width: 210px;
+}
+@media screen and (min-width: 768px) {
+  .client__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client__link {
+    width: 170px;
+  }
+}
+
+.clients {
+  background-color: var(--main-bg-color);
+}
+
+.client__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  color: var(--client-logo-color);
+  background-color: var(--main-bg-color);
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  -webkit-transition: color var(--anmation), border-color var(--anmation);
+  transition: color var(--anmation), border-color var(--anmation);
+}
+
+.client__link:hover,
+.client__link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.client__icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
 }
 
 /*шестнадцатый паршал*/

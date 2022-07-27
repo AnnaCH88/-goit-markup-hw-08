@@ -12,7 +12,7 @@
     .client__item {
     @media screen and (max-width: 767px) {
 
-    width: calc((100% - 60px)/2);
+    width: 210px;
     margin: 15px;
     }
     
@@ -29,55 +29,54 @@
     }
   }
 
-    
-
-// .clients {
-//     @extend %section;
-// }
-// .clients {
-//     background-color: var(--main-bg-color);
-// }
-// .client__list {
-//     display: flex;
-// }
-
-// .client__item:nth-child(6) {
-//     margin-right: 0;
-// }
-
-// .client__item {
-//     margin-right: 30px;
+  .client__link {
+    width: 210px;
+    @media  screen and (min-width: 768px) {
+    width: 226px;
+    }
+    @media  screen and (min-width: 1200px) {
+      width: 170px;
+    }
    
-// }
 
-// .client__link {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-     
-//     width: 170px;
-//     height: 92px;    
+
+  }
+
+
     
-//     cursor: pointer;
-//     color: var(--client-logo-color);
-//     background-color: var(--main-bg-color);
-//     border-radius: 4px;
-//     border: 1px solid var(--border-color);
 
-//     transition: color var(--anmation), border-color var(--anmation);
-// }
 
-// .client__link:hover,
-// .client__link:focus {
-//     color: var(--accent-color);
-//     border: 1px solid var(--accent-color);
+.clients {
+    background-color: var(--main-bg-color);
+
+}
+
+.client__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        
     
-// }
+    cursor: pointer;
+    color: var(--client-logo-color);
+    background-color: var(--main-bg-color);
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
 
-// .client__icon {
-//     width: 106px;
-//     height: 60px;
-//     fill: currentColor
+    transition: color var(--anmation), border-color var(--anmation);
+}
+
+.client__link:hover,
+.client__link:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
     
-// }
+}
+
+.client__icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor
+    
+}
 
