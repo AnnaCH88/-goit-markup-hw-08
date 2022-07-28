@@ -2,12 +2,15 @@
 
 .features__list { 
 display: block;
+margin-top: 60px;
+
 
 
 @media screen and (min-width: 768px) {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  margin-bottom: 60px;
 } 
 
  @media screen and (min-width: 1200px) {

@@ -1,12 +1,12 @@
 /*тринадцатый паршал*/
 
 .activities {
-    
-    @extend %section;
-     
-}
-.activities {
+   display: none;
     padding-top: 0;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
     
 }
 

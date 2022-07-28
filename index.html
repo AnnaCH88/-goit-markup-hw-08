@@ -17,36 +17,42 @@
             <!-- <nav class="header__nav"> -->
                 <a lang="en" href="./index.html" class="logo">Web<span class="studio">Studio</span></a>
             
-            <button class="mobile-menu-btn" type="button" data-menu-button>
-            <svg class="mobile-menu-icon" width="24" height="16">
-                <use class="mobile-menu-buger" href="./images/icon-mob.svg#icon-menu-mob"></use>
-                <use class="mobile-menu-close" href="./images/icon-mob.svg#icon-close-mob"></use>
-                
-            </svg>
-            </button>
+            <nav class="header-navigation">
+              <!--Moбильное меню-->
 
-            <!--Moбильное меню-->
-            
-           <div class="mobile-menu" data-menu>
+                <div class="mobile-menu">
+                    <button class="mobile-menu-btn" type="button" aria-expanded="fales" aria-controls="mobile-menu" data-menu-button>
+                    <svg class="mobile-menu-icon" width="40" height="40">
+                     <use class="mobile-menu-close" href="./images/icons.svg/#close-mob"></use>
+                     <use class="mobile-menu-buger" href="./images/icon-mob.svg#menu-mob"></use>
+                                
+                    </svg>
+                    </button>
+
+            <div class="mobile-menu" id="mobile-menu" data-menu>
+                      
            <ul class="mobile-menu-nav list">
             <li class="mobile-menu-nav">
-                <a href="./index.html">Студия</a>
+                <a class="mobile-menu-link mobile-menu-title--current link"href="./index.html">Студия</a>
             </li>
             <li class="mobile-menu-nav">
-                <a href="./portfolio.html">Портфолио</a>
+                <a class="mobile-menu-link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="mobile-menu-nav">
-                <a href="">Контакты</a>
+                <a class="mobile-menu-link" href="">Контакты</a>
             </li>
-           </ul>
+                  
+        </ul>
+
            <ul class="mobile-menu-contacts list">
-            <li class="mobile-menu-contacts">
-                <a href="">+38 096 111 11 11</a>
+            <li class="mobile-menu-tel">
+                <a href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
-            <li class="mobile-menu-contacts">
-                <a href="">info@devstudio.com</a>
+            <li class="mobile-menu-mail">
+                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             </ul>
+            
             <ul class="mobile-menu-socials list">
             <li class="mobile-menu-socials-item">
                 <a href="">Instagram</a>
@@ -62,7 +68,19 @@
             </li>
 
             </ul>
-        </div>
+
+                    </div>
+
+
+                </div>
+
+            </nav>
+            
+                  
+            
+                      
+            
+           
    
             
                 <ul class="nav__list">
@@ -180,14 +198,16 @@
            </div>
         </section>
         <!-- Чем занимаемся-->
-        <!-- <section class="activities">
+        <section class="activities">
             <div class="container">
                 <h2 class="section__title">Чем мы занимаемся</h2>
               
                 <ul class="activities__skills">                            
                     <li class="activities__item">
                     <div>
-                        <img  src="./images/box1.jpg" alt="руки на клавиатуре пишут код изображение кода на планшете и экране"
+                        <img srcset="./images/1lg@2x.jpg" 
+                        
+                        src="./images/box1.jpg" alt="руки на клавиатуре пишут код изображение кода на планшете и экране"
                             width="370">
                         <p class="name-card">Десктопные приложения</p>
                     </div>
@@ -210,7 +230,7 @@
                 </ul>
             </div>
 
-        </section> -->
+        </section>
         <!--Наша команда-->
         <section class="team">
             <div class="container">
