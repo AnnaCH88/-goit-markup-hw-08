@@ -1,35 +1,78 @@
 /*пятнадцатый паршал*/
 .hero {
+    margin: 0 auto;  
+    max-width: 480px;
+    height: 400px;
     background-color: #2F303A;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1600px;
-    height: 600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/Img.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     
-    background-color: #2F303A;
+    
     text-align: center;
-  
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/header\ sm.jpg');
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/header\ sm@2x.jpg');
+  }
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../../images/header\ md.jpg');
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/header\ md@2x.jpg');
+        }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        height: 600px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/header\ lg.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/header\ lg@2x.jpg');
+        }
+    }
 }
 
-.hero__title {
 
-    max-width: 696px;
+.hero-section {
+   
+    text-align: center;
+
+    }
+
+.hero__title {
+       
+    max-width: 360px;
     margin: 0 auto;
-    
+    text-align: center;
     color: var(--hero-text-color);
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     letter-spacing: 0.06em;
-    line-height: 1.36;
+    line-height: 1.61;
              
     text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+        max-width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
 
 
 }

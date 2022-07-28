@@ -1,7 +1,9 @@
 /*тринадцатый паршал*/
 
 .activities {
-    @extend %section;  
+    
+    @extend %section;
+     
 }
 .activities {
     padding-top: 0;
